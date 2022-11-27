@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+
+  dev:
+    image: earthastronaut/node-dev:latest
+    ports:
+      - 8101:8000
+    # command: vite serve --port 8000 --host localhost
+    command: bash -c 'while true; do echo "waiting..."; sleep 1; done'
+    environment:
+      # You can add `./local/zshrc` to be sourced on startup.
+      # Use ZSHRC_OVERWRITE if you want to use your own instead of extra.
+      ZSHRC_EXTRA: /home/node/app/local/zshrc
+    working_dir: /home/node/app
+    volumes:
+      # APPDIR is the location of the application in production.
+      # - ./services/client:/home/node/app
+      # Workspace is the mount for dev.
+      - ./:/home/node/app
