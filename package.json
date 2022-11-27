@@ -1,0 +1,43 @@
+{
+  "name": "use-theme",
+  "version": "1.0.0",
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "//-------------- dependencies --------------": {
+    "----------------": "",
+    "antd": "^5.0.1",
+    "react": "Web framework",
+    "react-dom": "DOM tools",
+    "react-router-dom": "Router tools",
+    "typescript": "Javascript is better with typing. Slightly.",
+    "@types/react": "types",
+    "@types/react-router-dom": "types",
+    "@vitejs/plugin-react": "Connect vite and react",
+    "vite": "Transplier framework",
+    "vite-pages-theme-basic": "^0.0.0",
+    "vite-plugin-mdx": "Markdown support",
+    "vite-plugin-react-pages": "Manage pages",
+    "": ""
+  },
+  "dependencies": {
+  },
+  "//-------------- devDependencies --------------": {
+    "prettier": "Autoformatting is amazing!",
+    "": ""
+  },
+  "devDependencies": {
+  },
+  "//-------------- scripts --------------": {},
+
+  "scripts": {
+    "dev": "vite serve",
+    "debug": "node --inspect ./node_modules/vite/bin/vite serve",
+    "build": "rm -rf dist && vite build --outDir dist && serve -s dist",
+    "debug:build": "node --inspect ./node_modules/vite/bin/vite build --outDir dist",
+    "ssr": "rm -rf dist && vite-pages ssr && serve dist",
+    "debug:ssr": "rm -rf dist && node --inspect-brk ./node_modules/vite-plugin-react-pages/bin/vite-pages.js ssr"
+  },
+  "": ""  
+}
