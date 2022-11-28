@@ -6,6 +6,10 @@ untracked_*
 /.pnp
 .pnp.js
 
+# vite
+*.mjs
+
+
 # testing
 /coverage
 
