@@ -6,8 +6,8 @@ services:
     image: earthastronaut/node-dev:latest
     ports:
       - 8101:8000
-    # command: vite serve --port 8000 --host localhost
-    command: bash -c 'while true; do echo "waiting..."; sleep 1; done'
+    command: vite --port 8000 --host 0.0.0.0
+    # command: bash -c 'while true; do echo "waiting..."; sleep 1; done'
     environment:
       # You can add `./local/zshrc` to be sourced on startup.
       # Use ZSHRC_OVERWRITE if you want to use your own instead of extra.
