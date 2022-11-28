@@ -30,7 +30,7 @@ start:
 		--detach
 
 # Watch logs
-watch:
+logs:
 	docker-compose logs -f dev
 
 # Stop all services. Wrap `docker-compose down`
